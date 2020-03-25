@@ -1,13 +1,13 @@
 require 'HTTParty'
 
-API_TOKEN = 'yKjW-NynjsB1cNsRVYZs'
+API_TOKEN = '***'
 ENDPOINT = 'https://api.pagerduty.com/users'
 TOKEN_STRING = "Token token=#{API_TOKEN}"
 
 query = HTTParty.get(
   ENDPOINT,
   headers: {
-    'Authorization'=> 'Token token=y_NbAkKc66ryYTWUXYEu',
+    'Authorization'=> "Token token=#{API_TOKEN}",
     'Accept'=> 'application/vnd.pagerduty+json;version=2',
   }
 )
